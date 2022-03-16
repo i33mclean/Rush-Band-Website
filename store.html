@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 </head>
         <!--Provides the document title-->
-        <title>Rush | About</title>
+        <title>Rush | Store</title>
         <meta name="description" content="This is the description">
 <body>
 
@@ -9,9 +9,9 @@
     <header>
         <nav>
             <ul>
-                <li>HOME</li>
-                <li>STORE</li>
-                <li>ABOUT</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
         <hr>
@@ -20,12 +20,13 @@
 
     <!--Presents the Permanent Waves album image-->
     <section>
+        <h2>MUSIC</h2>
         <div>
             <strong>Permanent Waves</strong>
         </div>
         <img src="images/Permanent Waves.png">
         <div>
-            <span>$24.99</span>
+            <span>$12.99</span>
             <button role="button">ADD TO CART</button>
         </div>
     <!--Presents the Fly By Night album image-->
@@ -34,7 +35,7 @@
         </div>
         <img src="images/Fly By Night.png">
         <div>
-            <span>$24.99</span>
+            <span>$14.99</span>
             <button role="button">ADD TO CART</button>
         </div>
     <!--Presents the 2112 album image-->
@@ -43,7 +44,7 @@
         </div>
         <img src="images/2112.png">
         <div>
-            <span>$24.99</span>
+            <span>$9.99</span>
             <button role="button">ADD TO CART</button>
         </div>
     <!--Presents the Moving Pictures album image-->
@@ -52,7 +53,7 @@
         </div>
         <img src="images/Moving Pictures.png">
         <div>
-            <span>$24.99</span>
+            <span>$19.99</span>
             <button role="button">ADD TO CART</button>
         </div>
     </section>
@@ -67,7 +68,7 @@
         </div>
         <img src="images/T shirt.png">
         <div>
-            <span>$14.99</span>
+            <span>$19.99</span>
             <button role="button">ADD TO CART</button>
         </div>
 
@@ -76,7 +77,7 @@
         </div>
         <img src="images/Coffee Cup.png">
         <div>
-            <span>$7.99</span>
+            <span>$6.99</span>
             <button role="button">ADD TO CART</button>
     </section>
     
@@ -91,23 +92,62 @@
             <strong>QUANTITY</strong>
         </div>
 
+        <!--Provides cart information for a T-Shirt-->
         <div>
-            <img src="images/Permanent Waves.png" width="100" height="100">
+            <img src="images/T shirt.png" width="100" height="100">
             <span>T-Shirt</span>
             &lt;&gt;
-            <span>14.99</span>
+            <span>19.99</span>
+            &lt;&gt;
             <!--Allows user to input quantity-->
-            <input type="number">
+            <input type="number" value="1">
+            <button role="button">REMOVE</button>
         </div>
+
+        <!--Provides cart information for the 2112 Album-->
+        <div>
+            <img src="images/2112.png" width="100" height="100">
+            <span>2112 Album</span>
+            &lt;&gt;
+            <span>9.99</span>
+            &lt;&gt;
+            <!--Allows user to input quantity-->
+            <input type="number" value="2">
+            <button role="button">REMOVE</button>
+        </div>
+        <hr>
+
+        <!--Provides the total heading, and the price of the total-->
+        <div>
+            <strong>TOTAL</strong>
+            <span>$39.97</span>
+        </div>
+
+        <!--Provides the purchase button-->
+        <div>
+            <button role="button">PURCHASE</button>
+        </div>
+
     </section>
 
     <!--Provides the images for YT,Spotify, and FB-->
     <footer>
         <h3>Rush</h3>
         <ul>
-            <li><img src="Images/YouTube Logo.png"></li>
-            <li><img src="Images/Spotify Logo.png"></li>
-            <li><img src="Images/Facebook Logo.png"></li>
+            <!--Inputs for Youtube-->
+            <li>
+                <a href="https://www.youtube.com/RUSH" target="_blank">
+                <img src="Images/YouTube Logo.png"></li></a>
+            
+            <!--Inputs for Spotify-->
+            <li>
+                <a href="https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq" target="_blank">
+                <img src="Images/Spotify Logo.png"></li></a>
+            
+            <!--Inputs for Facebook-->
+            <li>
+                <a href="https://www.facebook.com/rushtheband" target="_blank">
+                <img src="Images/Facebook Logo.png"></li></a>
         </ul>
     </footer>
 </body>

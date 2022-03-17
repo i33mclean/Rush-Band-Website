@@ -23,6 +23,7 @@
 
 /*Removes whitespace from the sides of the header and navigation elements*/
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -100,6 +101,7 @@ html, body {
     margin: 0 auto;
     /*Keeps space between text and edge of webpage*/
     padding: 0 1.5em;
+    min-height: 100%;
 }
 
 /*Syles the ABOUT header*/
@@ -114,17 +116,38 @@ html, body {
 /*Styles the about band image*/
 .about-band-image {
     float:left;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin: 15px;
     border-radius: 50%;
 }
 
+/*Styles the footer*/
 .main-footer {
     background-color: #56CCF2;
     color: white;
     padding: .25em 0;
 }
+
+/*Uses flexbox to align elements in footer*/
 .main-footer-container {
     display: flex;
+    align-items: center;
+}
+
+/*Causes social media elements to take up more space on right side of footer*/
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+/*Spaces footer nav elements*/
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+/*Decreases size of footer nav elements*/
+.footer-nav img {
+    width: 30px;
+    height: 30px;
 }

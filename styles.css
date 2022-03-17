@@ -1,0 +1,130 @@
+/*Raleway, and Metal Mania font import link*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+/*Imports both Booter Zero Zero fonts*/
+@font-face{
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+        url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+}
+
+/*Everything selector*/
+* {
+    /*Ensures width attribute takes padding attribute as well*/
+    box-sizing: border-box;
+    /*Makes website text Raleway font*/
+    font-family: Raleway;
+    /*Changes text color to a light grey*/
+    color: #777;
+}
+
+/*Removes whitespace from the sides of the header and navigation elements*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Removes whitespace above navigation element*/
+.nav ul {
+    margin:0;
+}
+
+/*Puts nav elements in a line*/
+.nav li {
+    display: inline;
+}
+
+/*Styles nav elements*/
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+/*Centers nav text, makes font bigger, lightens the font weight, adds a border below the text*/
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter; 
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+/*Spaces nav elements as the tab is bigger or smaller*/
+.main-nav li {
+    padding: 0 5%;
+}
+
+/*Gives nav elements a background on a mouse hover*/
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/*provides the header background*/
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+/*Styles the band name header using the Booter Zero Zero font*/
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+/*Changes font size of the band name header*/
+.band-name-large {
+    font-size: 9em;
+}
+
+/*gives spacing on top, bottom, left, and right of section element*/
+.content-section {
+    margin: 1em;
+}
+
+/*Styles the paragraph under the ABOUT header*/
+.container {
+    /*Establishes that the paragraph can't be drawn out more than 900px*/
+    max-width: 900px;
+    /*Ensures text is always center*/
+    margin: 0 auto;
+    /*Keeps space between text and edge of webpage*/
+    padding: 0 1.5em;
+}
+
+/*Syles the ABOUT header*/
+.section-header {
+    font-family:"Metal Mania";
+    font-weight:normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/*Styles the about band image*/
+.about-band-image {
+    float:left;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+.main-footer-container {
+    display: flex;
+}

@@ -3,56 +3,65 @@
     <!--Provides the document title-->
     <title>Rush | Store</title>
     <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     
     <!--Header items for page navigation-->
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr>
-        <h1>Rush</h1>
+        <h1 class="band-name band-name-large">Rush</h1>
     </header>
 
     <!--Description of Rush-->
-    <section>
-        <h2>ABOUT</h2>
+    <section class ="content-section container">
+        <h2 class="section-header">ABOUT</h2>
+        <img class="about-band-image" src="images/Rush Main Picture.jpg">
         <p>Rush is a Canadian rock band that was originally formed in Toronto in 1968.
             The original band members were Alex Lifeson, John Rutsey, and Jeff Jones.
             Jones was quickly replaced by Geddy Lee who specialized in bass, vocals, keyboards, and music composition.
             Then, in 1974, Rutsey was replaced by drummer Neil Peart who went on to become legendary as Rush continued 
-            their commercial success throughout the 1970's, 80's, and 90's. The band was active from 1968-2018, and during 
+            their commercial success throughout the 1970's, 80's, and 90's.
+        </p>
+        <p>The band was active from 1968-2018, and during 
             these years they were awarded 14 platinum and 3 multi-platinum albums in the United States, as well as 17 platinum
             albums in Canada. Rush was also nominated for 7 Grammy Awards, won many Juno awards, and also won the International 
             Achievement Award at the 2009 SOCAN Awards. Rush was Inducted into the Canadian Music Hall of Fame in 1994, and were later
-            inducted into the Rock and Roll Hall of Fame in 2013.
-        </p>
-        <img src="images/Rush Main Picture.jpg">
+            inducted into the Rock and Roll Hall of Fame in 2013.</p>
     </section>
 
     <!--Provides the images for YT,Spotify, and FB-->
-    <footer>
-        <h3>Rush</h3>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+        <h3 class="band-name">Rush</h3>
         <ul>
             <li>
                 <a href="https://www.youtube.com/RUSH" target="_blank">
-                <img src="Images/YouTube Logo.png"></li></a>
+                <img src="Images/YouTube Logo.png">
+            </a>
+            </li>
             
             <!--Inputs for Spotify-->
             <li>
                 <a href="https://open.spotify.com/artist/2Hkut4rAAyrQxRdof7FVJq" target="_blank">
-                <img src="Images/Spotify Logo.png"></li></a>
+                <img src="Images/Spotify Logo.png">
+            </a>
+            </li>
             
             <!--Inputs for Facebook-->
             <li>
                 <a href="https://www.facebook.com/rushtheband" target="_blank">
-                <img src="Images/Facebook Logo.png"></li></a>
+                <img src="Images/Facebook Logo.png">
+            </a>
+            </li>
         </ul>
+    </div>
     </footer>
 </body>
 </html>

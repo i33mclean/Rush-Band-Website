@@ -165,7 +165,7 @@ html, body {
 
 /*Styles the GET THE LATEST ALBUM Button*/
 .btn-header {
-    margin: .5em 15% 2em 15%;
+    margin: .5em 30% 2em 30%;
     color: white;
     border: 2px solid #2D9CDB; 
     background-color: rgba(255, 255, 255, .1);

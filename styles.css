@@ -151,3 +151,91 @@ html, body {
     width: 30px;
     height: 30px;
 }
+
+/*END OF ABOUT PAGE STYLES*/
+/*START OF INDEX PAGE STYLES*/
+
+/*Styles for btn class*/
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+/*Styles the GET THE LATEST ALBUM Button*/
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB; 
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*Adds a white background while hovering over the GET THE LATEST ALBUM Button*/
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/*Styles the PLAY Button*/
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color:#2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+/*Styles each row of the tour dates*/
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+/*Removes the border from the bottom tour*/
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}

@@ -1,112 +1,84 @@
 <!DOCTYPE html>
 <head>
     <!--Provides the document title-->
-    <title>Rush | Store</title>
+    <title>Rush</title>
     <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
     <!--Header items for page navigation-->
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr>
-        <h1>Rush</h1>
-        <button type="button">Get The Latest Album</button>
-        <br>
-        <br>
-        <!-- TODO: Find a suitable background image-->
-        <button type="button">&#9658;</button>
+        <h1 class="band-name band-name-large">Rush</h1>
+        <div class="container">
+        <button class="btn btn-header" type="button">Get The Latest Album</button>
+        </div>
+        <button class="btn btn-header btn-play" type="button">&#9658;</button>
     </header>
-    <section>
+    <section class="content-section container">
         <!--R40 Header-->
-        <h2>R40 TOUR</h2>
+        <h2 class="section-header">R40 TOUR</h2>
 
         <!--Provides tour information, dates, location-->
         <div>
-            <div>
-                <strong>MAY 8</strong>
-                &lt;&gt;
-                <span>TULSA, OK</span>
-                &lt;&gt;
-                <span>BOK CENTER</span>
-                &lt;&gt;
-                
+            <div class="tour-row">
+                <span class="tour-item tour-date">MAY 8</span>
+                <span class="tour-item tour-city">TULSA, OK</span>
+                <span class="tour-item tour-arena">BOK CENTER</span>
                 <!--Buy tickets button-->
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>MAY 24</strong>
-                &lt;&gt;
-                <span>TAMPA, FL</span>
-                &lt;&gt;
-                <span>AMALIE ARENA</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+            <div class="tour-row">
+                <strong class="tour-item tour-date">MAY 24</strong>
+                <span class="tour-item tour-city">TAMPA, FL</span>
+                <span class="tour-item tour-arena">AMALIE ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>JUNE 12</strong>
-                &lt;&gt;
-                <span>CHICAGO, IL</span>
-                &lt;&gt;
-                <span>UNITED CENTER</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+            <div class="tour-row">
+                <strong class="tour-item tour-date">JUNE 12</strong>
+                <span class="tour-item tour-city">CHICAGO, IL</span>
+                <span class="tour-item tour-arena">UNITED CENTER</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>JUNE 17</strong>
-                &lt;&gt;
-                <span>TORONTO, CA</span>
-                &lt;&gt;
-                <span>AIR CANADA CENTRE</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+            <div class="tour-row">
+                <strong class="tour-item tour-date">JUNE 17</strong>
+                <span class="tour-item tour-city">TORONTO, CA</span>
+                <span class="tour-item tour-arena">AIR CANADA CENTRE</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>JULY 11</strong>
-                &lt;&gt;
-                <span>DENVER, CO</span>
-                &lt;&gt;
-                <span>PEPSI CENTER</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+            <div class="tour-row">
+                <strong class="tour-item tour-date">JULY 11</strong>
+                <span class="tour-item tour-city">DENVER, CO</span>
+                <span class="tour-item tour-arena">PEPSI CENTER</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>JULY 25</strong>
-                &lt;&gt;
-                <span>LAS VEGAS, NV</span>
-                &lt;&gt;
-                <span>MGM GRAND GARDEN ARENA</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
-                <hr>
+            <div class="tour-row">
+                <strong class="tour-item tour-date">JULY 25</strong>
+                <span class="tour-item tour-city">LAS VEGAS, NV</span>
+                <span class="tour-item tour-arena">MGM GRAND GARDEN ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-            <div>
-                <strong>AUGUST 1</strong>
-                &lt;&gt;
-                <span>INGLEWOOD, CA</span>
-                &lt;&gt;
-                <span>THE FORUM</span>
-                &lt;&gt;
-                <button type="button">BUY TICKETS</button> 
+            <div class="tour-row">
+                <strong class="tour-item tour-date">AUGUST 1</strong>
+                <span class="tour-item tour-city">INGLEWOOD, CA</span>
+                <span class="tour-item tour-arena">THE FORUM</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button> 
             </div>
-        </div>
     </section>
 
     <!--Provides the images for YT,Spotify, and FB-->
-    <footer>
-        <h3>Rush</h3>
-        <ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+        <h3 class="band-name">Rush</h3>
+        <ul class="nav footer-nav">
+            <!--Inputs for Youtube-->
             <li>
                 <a href="https://www.youtube.com/RUSH" target="_blank">
                 <img src="Images/YouTube Logo.png">
@@ -127,6 +99,7 @@
             </a>
             </li>
         </ul>
+    </div>
     </footer>
 </body>
 </html>

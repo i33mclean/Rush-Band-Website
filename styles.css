@@ -18,7 +18,7 @@
     /*Makes website text Raleway font*/
     font-family: Raleway;
     /*Changes text color to a light grey*/
-    color: #777;
+    color: #777; 
 }
 
 /*Removes whitespace from the sides of the header and navigation elements*/
@@ -26,6 +26,11 @@ html, body {
     height: 80.5%;
     margin: 0;
     padding: 0;
+}
+
+/*Removes whitespace between footer and bottom of page*/
+html, footer {
+    margin-bottom: -1.2em;
 }
 
 /*Removes whitespace above navigation element*/
@@ -261,6 +266,7 @@ html, body {
 /*Makes shop item images smaller*/
 .shop-item-image {
     height: 250px;
+    border-radius: 10px;
 }
 
 /*Styles the row with the price and add to cart button*/
@@ -305,14 +311,95 @@ html, body {
     display: flex;
 }
 
+/*Changes the width of the cart item border*/
 .cart-item {
     width: 45%;
 }
 
+/*Changes the width of the cart price border*/
 .cart-price {
     width: 20%;
+    font-size: 1.2em;
+    color: #333;
 }
 
+/*Changes the width of the cart quantity border*/
 .cart-quantity {
     width: 35%;
+}
+
+/*Stlyes the title of the item in the cart*/
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+/*Styles the images within the cart*/
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Styles the REMOVE button*/
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+/*When hovering over the REMOVE button, a darker shade is applied*/
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+/*Styles the quantity input*/
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+/*Uses last child selector to put a solid black border under cart items*/
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+/*Removes original border elements from the bottom border*/
+.cart-row:last-child .cart-column{
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
 }

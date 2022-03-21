@@ -3,83 +3,85 @@
     <!--Provides the document title-->
     <title>Rush | Store</title>
     <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
     <!--Header items for page navigation-->
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr>
-        <h1>Rush</h1>
+        <h1 class="band-name band-name-large">Rush</h1>
     </header>
 
     <!--Presents the Permanent Waves album image-->
-    <section>
-        <h2>MUSIC</h2>
-        <div>
-            <strong>Permanent Waves</strong>
-        </div>
-        <img src="images/Permanent Waves.png">
-        <div>
-            <span>$12.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Permanent Waves</span>
+                <img class="shop-item-image" src="images/Permanent Waves.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
     <!--Presents the Fly By Night album image-->
-        <div>
-            <strong>Fly By Night</strong>
-        </div>
-        <img src="images/Fly By Night.png">
-        <div>
-            <span>$14.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Fly By Night</span>
+                <img class="shop-item-image" src="images/Fly By Night.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
     <!--Presents the 2112 album image-->
-        <div>
-            <strong>2112</strong>
-        </div>
-        <img src="images/2112.png">
-        <div>
-            <span>$9.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
+            <div class="shop-item">
+                <span class="shop-item-title">2112</span>
+                <img class="shop-item-image" src="images/2112.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
     <!--Presents the Moving Pictures album image-->
-        <div>
-            <strong>Moving Pictures</strong>
-        </div>
-        <img src="images/Moving Pictures.png">
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Moving Pictures</span>
+                <img class="shop-item-image" src="images/Moving Pictures.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+    </div>
     </section>
 
     <!--Provides the Merch section-->
-    <section>
-        <h2>MERCH</h2>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
         
     <!--Presents the T-Shirt option and add to cart button in merch section-->
-        <div>
-            <strong>T-Shirt</strong>
-        </div>
-        <img src="images/T shirt.png">
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
+            <div class="shop-items">
+                <span class="shop-item-title">T-Shirt</span>
+                <img class="shop-item-image" src="images/T shirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
 
-        <div>
-            <strong>Coffee Cup</strong>
-        </div>
-        <img src="images/Coffee Cup.png">
-        <div>
-            <span>$6.99</span>
-            <button role="button">ADD TO CART</button>
+            <div class="shop-items">
+                <span class="shop-item-title">Coffee Cup</span>
+                <img class="shop-item-image" src="images/Coffee Cup.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+            </div>
     </section>
     
     <!--Provides the Cart section-->

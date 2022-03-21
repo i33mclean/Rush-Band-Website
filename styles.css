@@ -282,3 +282,37 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Styles the headers in the CART columns*/
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/*Creates a border and space between cart columns*/
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*Lines up cart items on a single line*/
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.cart-quantity {
+    width: 35%;
+}

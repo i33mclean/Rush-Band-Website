@@ -228,6 +228,7 @@ html, body {
     max-width: 19%;
 }
 
+/*Styles the ADD TO CART button*/
 .btn-primary {
     color: white;
     background-color: #56CCF2;
@@ -236,6 +237,48 @@ html, body {
     font-weight: bold;
 }
 
+/*When hovering over the ADD TO CART button, a darker shade is applied*/
 .btn-primary:hover {
     background-color: #2D9CDB;
+}
+
+/*Provides spacing between shop items*/
+.shop-item {
+    margin: 30px;
+}
+
+/*Styles album titles*/
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/*Makes shop item images smaller*/
+.shop-item-image {
+    height: 250px;
+}
+
+/*Styles the row with the price and add to cart button*/
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+/*Moves add to cart button to end of container, and makes add to cart button darker*/
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+/*Styles each shop item to align all items*/
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
